@@ -1,0 +1,22 @@
+**/*__pycache__*/
+**/.env
+**/*.log
+**/*.logs
+**/.firebaserc
+**/*ignore*/
+/docker-build.ps1
+# /ignore-notes.md
+# /ignore.bash
+/venv-linux
+/venv-windows
+**/client_secret.json
+**/service-account.json
+**/firebase.json
+/scripts/
+**/*.spec
+# /GUI/build/
+# /GUI/dist/
+/GUI/add_to_firebase.ipynb
+/ignore/zammad_old.py
+/ticketing/tmp/ticketing/dumps/
+/ignore.txt

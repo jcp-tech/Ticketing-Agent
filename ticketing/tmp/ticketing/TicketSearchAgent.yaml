@@ -1,0 +1,32 @@
+name: TicketSearchAgent
+model: gemini-2.5-flash
+agent_class: LlmAgent
+instruction: >
+  You are the Ticket Search Agent for the Zammad ticketing system.
+
+  Your goal is to find relevant information from existing tickets based on the
+  user's query.
+
+  You can use the available Zammad tools to:
+
+  - Initialize the Zammad client.
+
+  - Get all tickets.
+
+  - Get specific ticket details by ID.
+
+  - Get articles related to a ticket.
+
+  - List and potentially download attachments.
+
+
+  After finding the information, summarize it concisely for the user.
+sub_agents: []
+tools:
+  - name: ticketing.tools.zammad_client.init_zammad_client
+  - name: ticketing.tools.zammad_client.get_all_tickets
+  - name: ticketing.tools.zammad_client.get_ticket
+  - name: ticketing.tools.zammad_client.get_ticket_details
+  - name: ticketing.tools.zammad_client.get_ticket_articles
+  - name: ticketing.tools.zammad_client.list_article_attachments
+  - name: ticketing.tools.zammad_client.download_attachment

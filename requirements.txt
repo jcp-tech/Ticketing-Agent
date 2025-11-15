@@ -1,0 +1,5 @@
+requests
+python-dotenv
+# configparser
+zammad_py
+google-adk

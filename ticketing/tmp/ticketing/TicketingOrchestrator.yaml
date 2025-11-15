@@ -1,0 +1,8 @@
+name: TicketingOrchestrator
+agent_class: SequentialAgent
+description: This agent orchestrates the workflow for Zammad ticketing requests.
+sub_agents:
+  - config_path: ./TicketClassifierAgent.yaml
+  - config_path: ./TicketSearchAgent.yaml
+  - config_path: ./TicketCreationAgent.yaml
+  - config_path: ./TicketUpdateAgent.yaml
