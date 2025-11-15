@@ -14,9 +14,5 @@
 **/firebase.json
 /scripts/
 **/*.spec
-# /GUI/build/
-# /GUI/dist/
-/GUI/add_to_firebase.ipynb
-/ignore/zammad_old.py
-/ticketing/tmp/ticketing/dumps/
-/ignore.txt
+# /ignore/zammad_old.py
+/ticketing/tmp/
